@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Comparison Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-animation">
+        <div class="octopus">🐙</div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+    <div class="container">
+        <header>
+            <h1>📊 CSV Comparison Tool</h1>
+            <p>Upload two CSV files to compare and download the differences</p>
+        </header>
+
+        <div class="upload-section">
+            <div class="upload-box">
+                <label for="file1" class="upload-label">
+                    <div class="upload-icon">📁</div>
+                    <div class="upload-text">
+                        <span class="upload-title">First CSV File</span>
+                        <span class="file-name" id="fileName1">Click to upload or drag and drop</span>
+                    </div>
+                    <input type="file" id="file1" accept=".csv" class="file-input">
+                </label>
+            </div>
+
+            <div class="upload-box">
+                <label for="file2" class="upload-label">
+                    <div class="upload-icon">📁</div>
+                    <div class="upload-text">
+                        <span class="upload-title">Second CSV File</span>
+                        <span class="file-name" id="fileName2">Click to upload or drag and drop</span>
+                    </div>
+                    <input type="file" id="file2" accept=".csv" class="file-input">
+                </label>
+            </div>
+        </div>
+
+        <div class="options-section">
+            <label class="option-label">
+                <input type="text" id="sheetName" value="Sheet1" placeholder="Sheet name">
+                <span>Sheet/Tab Name</span>
+            </label>
+        </div>
+
+        <button id="compareBtn" class="compare-btn" disabled>Compare Files</button>
+
+        <div id="results" class="results-section" style="display: none;">
+            <div class="results-header">
+                <h2>Comparison Results</h2>
+                <div class="results-stats" id="resultsStats"></div>
+            </div>
+            <div class="results-preview" id="resultsPreview"></div>
+            <button id="downloadBtn" class="download-btn">Download Differences CSV</button>
+        </div>
+
+        <div id="error" class="error-message" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
